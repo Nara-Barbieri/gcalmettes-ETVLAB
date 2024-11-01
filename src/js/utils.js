@@ -47,7 +47,7 @@ async function* getResultIterator(query, limit=60){
 
 function constructGraph(publications, previousGraph, width, height, filterMax){
 	// all pairs of authors per publications
-	const authorshipMap = publications.map(pub => getCombinationsOfSize(pub.authors, 2, "name"))
+	const authorshipMap = publications.map(pub => getCombinationsOfSize(pub.authors, 2, "Tarling EJ[Author]" and "de Aguiar Vallim TQ[Author]"))
 	// all pairs of authors in one array
 	const mergeAuthorshipMap = [].concat(...authorshipMap);
 	// graph
