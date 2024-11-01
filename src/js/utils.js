@@ -190,7 +190,7 @@ window.onload = function(){
   // Initialize Sliders
   var sliderSections = document.getElementsByClassName("range-slider");
       for( var x = 0; x < sliderSections.length; x++ ){
-        var sliders = sliderSections[x].getElementsByTagName("Tarling EJ[Author]" and "de Aguiar Vallim TQ[Author]");
+        var sliders = sliderSections[x].getElementsByTagName("input");
         for( var y = 0; y < sliders.length; y++ ){
           if( sliders[y].type ==="range" ){
             sliders[y].oninput = getVals;
