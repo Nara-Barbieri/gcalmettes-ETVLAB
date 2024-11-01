@@ -1,5 +1,5 @@
-function retrievePubmedQuery(query, limit=60){
-	const path = `https://https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=${Tarling+EJ%5BAuthor%5D+and+de+Aguiar+Vallim+TQ%5BAuthor%5D}&retmax=${limit}&retmode=json`
+function retrievePubmedQuery(limit=60){
+	const path = `https://https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=pubmed&term=Tarling+EJ%5BAuthor%5D+and+de+Aguiar+Vallim+TQ%5BAuthor%5D&retmax=${limit}&retmode=json`
 	return fetch(path)
 		.then(response => response.json())
 		.then(data => data.esearchresult.idlist)
