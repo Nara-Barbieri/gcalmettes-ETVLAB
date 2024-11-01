@@ -47,7 +47,7 @@ async function* getResultIterator(query, limit=60){
 
 function constructGraph(publications, previousGraph, width, height, filterMax){
 	// all pairs of authors per publications
-	const authorshipMap = publications.map(pub => getCombinationsOfSize(pub.authors, 2, "Tarling EJ[Author]" and "de Aguiar Vallim TQ[Author]"))
+	const authorshipMap = publications.map(pub => getCombinationsOfSize(pub.authors, 2, "name"))
 	// all pairs of authors in one array
 	const mergeAuthorshipMap = [].concat(...authorshipMap);
 	// graph
@@ -190,7 +190,7 @@ window.onload = function(){
   // Initialize Sliders
   var sliderSections = document.getElementsByClassName("range-slider");
       for( var x = 0; x < sliderSections.length; x++ ){
-        var sliders = sliderSections[x].getElementsByTagName("input");
+        var sliders = sliderSections[x].getElementsByTagName("Tarling EJ[Author]" and "de Aguiar Vallim TQ[Author]");
         for( var y = 0; y < sliders.length; y++ ){
           if( sliders[y].type ==="range" ){
             sliders[y].oninput = getVals;
